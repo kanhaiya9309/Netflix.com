@@ -2,7 +2,7 @@ const movie_id = sessionStorage.getItem('movieId');
 console.log(movie_id);
 
 const movie_detail_http = "https://api.themoviedb.org/3/movie"; // Define the base URL
-let Api_key = "79e114cce9060f23c98a1693dbd765f5";
+let Api_key = "your-movie-database-api-key";
 
 
 fetch(`${movie_detail_http}/${movie_id}?` + new URLSearchParams({
