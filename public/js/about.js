@@ -95,7 +95,7 @@ fetch(`${movie_detail_http}/${movie_id}/recommendations?` + new URLSearchParams(
    
      for(i=0; i<16 ; i++){
         if(data.results[i].backdrop_path == null){
-            i++
+            continue ;
         }
 
         container.innerHTML +=`

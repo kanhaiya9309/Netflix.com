@@ -9,9 +9,15 @@ fetch( genres_list_http + new URLSearchParams({
  .then(res=>res.json())
  .then(data=> {
      console.log(data);
-    data.genres.forEach(item => {
-        fetchMoviesListByGenres(item.id ,item.name); 
-    });
+    //  const filteredGenres = data.genres.filter(item => item.id !== 15 && item.id !== 14);
+    const filteredGenres = data.genres.filter(item => item.name !== 'TV Movie' && item.name !== 'Science Fiction');
+    console.log(filteredGenres)
+     filteredGenres.forEach(item => {
+         fetchMoviesListByGenres(item.id, item.name);
+     });
+    // data.genres.forEach(item => {
+    //     fetchMoviesListByGenres(item.id ,item.name); 
+    // });
  })
 
 const fetchMoviesListByGenres = (id , genres)=>{
@@ -23,7 +29,12 @@ const fetchMoviesListByGenres = (id , genres)=>{
    .then(res=>res.json())
    .then(data=>{
     console.log(data) 
-    makeCategoryOfMovies(`${genres}_movies`, data.results);
+    // makeCategoryOfMovies(`${genres}_movies`, data.results);
+    if (data.results && data.results.length > 10) {
+      makeCategoryOfMovies(`${genres}_movies`, data.results);
+  } else {
+      console.log(`No movies found for ${genres}`);
+  }
    })
    .catch(err=>{
     console.log(err)
@@ -51,14 +62,16 @@ const makeCards = (id,data)=>{
    const movieContainer = document.getElementById(id);
    data.forEach((item ,i)=>{
     if(item.backdrop_path == null){
-        item.backdrop_path == item.poster_path ;
+        item.backdrop_path = item.poster_path ;
        if(item.backdrop_path == null){
          return ;
        }   
     }
+  
+
    movieContainer.innerHTML +=` 
        <div class="movie" onclick="movieSelected('${item.id}')" >
-       <img src="${img_Url}${item.backdrop_path}" alt="movie-poster">
+       <img src="${img_Url}${item.backdrop_path} " alt="movie-poster">
        <p class="movie-title">${item.title}</p>
      </div>
   `;

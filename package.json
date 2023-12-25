@@ -10,6 +10,7 @@
     "mongoose": "^8.0.0",
     "mongoose-encryption": "^2.1.2",
     "mongoose-findorcreate": "^4.0.0",
+    "nodemon": "^3.0.2",
     "passport": "^0.6.0",
     "passport-google-oauth2": "^0.2.0",
     "passport-local": "^1.0.0",
@@ -18,8 +19,10 @@
   "name": "auth",
   "version": "1.0.0",
   "main": "app.js",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev":"nodemon index.js"
   },
   "keywords": [],
   "author": "",
