@@ -1,4 +1,3 @@
-Certainly! Here's a suggested GitHub repository description for your Netflix clone project:
 
 ---
 
@@ -29,7 +28,7 @@ This project is a Netflix clone that allows users to explore and view details ab
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/netflix-clone.git
+    git clone https://github.com/kanhaiya9309/Netflix-Clone-.com
     ```
 
 2. Install dependencies:
@@ -59,6 +58,24 @@ This project is a Netflix clone that allows users to explore and view details ab
 
     The application will be available at `http://localhost:5500`.
 
+## Screenshots
+![Screenshot (204)](https://github.com/kanhaiya9309/Netflix-Clone-.com/assets/124244655/2646fab7-fdd7-4e6b-994c-fcf3cff7abce)
+
+![Screenshot (209)](https://github.com/kanhaiya9309/Netflix-Clone-.com/assets/124244655/7625441f-4466-416c-bf7e-2fe8f8a149ab)
+
+![Screenshot (206)](https://github.com/kanhaiya9309/Netflix-Clone-.com/assets/124244655/7bdc8cd9-ff40-40a5-b656-b45951c1e8dc)
+
+![Screenshot (207)](https://github.com/kanhaiya9309/Netflix-Clone-.com/assets/124244655/6e75fe2b-bbf4-4f3b-9554-6dbdf3e63555)
+
+![Screenshot (208)](https://github.com/kanhaiya9309/Netflix-Clone-.com/assets/124244655/8c079213-9a40-4f31-b529-06fe61130c48)
+
+![Screenshot (199)](https://github.com/kanhaiya9309/Netflix-Clone-.com/assets/124244655/5c8daacf-894a-4d36-a7c3-a8fa7d3e33f1)
+
+![Screenshot (205)](https://github.com/kanhaiya9309/Netflix-Clone-.com/assets/124244655/1066b7ee-aff4-47a7-9e24-ebd3cbc8f134)
+
+
+
+
 ## Contributors:
 
 - Solo
@@ -68,4 +85,3 @@ Feel free to contribute or open issues. Enjoy exploring movies on your personali
 
 ---
 
-Make sure to replace the placeholders like `your-username`, `your-mongodb-connection-string`, `your-session-secret`, and `your-movie-database-api-key` with the actual values. Also, update the "Contributors" section with the appropriate GitHub profiles.
