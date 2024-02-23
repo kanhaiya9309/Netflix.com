@@ -78,8 +78,10 @@ This project is a Netflix clone that allows users to explore and view details ab
 
 ## Contributors:
 
-- Solo
-- Kanhaiya Gawali -- https://github.com/kanhaiya9309 
+- In Group 
+- Kanhaiya Gawali --
+- Dnyaneshwar Palle -- 
+- https://github.com/kanhaiya9309 
 
 Feel free to contribute or open issues. Enjoy exploring movies on your personalized Netflix clone!
 
